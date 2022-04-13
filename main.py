@@ -15,6 +15,7 @@ print(paste(str, s))
 #строку, и выполняющую вставку строки в указанную позицию, если вставка 
 #на указанную позицию невозможна, то вернуть сообщение «paste operation is
 #not possible»;
+
 #2
 s = input("Введите строку: ")
 index = int(input("Введите позицию: "))
@@ -28,3 +29,14 @@ print(insert_dash(s, index))
 #3) необходимо разработать функцию, принимающую список строк и число, и 
 #выполняющую удаление строки по указанной позицию списка, если удаление
 #невозможно, то вернуть сообщение «delete operation is not possible».
+#3
+s = list(input("Введите строку: "))
+print(s[2])
+a = int(input("Введите позицию: "))
+def str(s, a):
+    if a > len(s):
+        return print("delete operation is not possible")
+    del s[a]
+    return "".join(s)
+print(str(s, a))
+
